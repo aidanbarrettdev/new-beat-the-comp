@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>the game</h1>
+    <h1>BEAT THE COMPUTER</h1>
     <button class="start-btn">START</button>
     <div class="points"></div>
     <div class="choice-box"></div>
+    <div class="rules">
+      <h2>How To Play</h2>
+      <p>1) Click on the colour you are shown to get points</p>
+      <p>2) If the black colour is clicked the speed increases</p>
+      <p>3) If the wrong colour is clicked you lose</p>
+      <p>Get 20 points to WIN!</p>
+      <button class="rules-btn">x</button>
+    </div>
     <div class="game-grid">
       <div class="game-tile" id="1"></div>
       <div class="game-tile" id="2"></div>
@@ -23,9 +31,8 @@
       <div class="game-tile" id="8"></div>
       <div class="game-tile" id="9"></div>
     </div>
-
-    <div class="win-box"></div>
     <div class="timer-box">TIME:00</div>
+    <div class="win-box"></div>
 
     <script src="app.js"></script>
   </body>

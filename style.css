@@ -1,4 +1,19 @@
+canvas {
+  margin-bottom: 15px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(42, 38, 69),
+    rgb(85, 86, 138)
+  );
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +29,7 @@ h1 {
   color: white;
 }
 button {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 150px;
   height: 50px;
   font-size: 30px;
@@ -22,10 +37,17 @@ button {
   background: rgb(254, 254, 254);
   box-shadow: 0px 0px 50px rgb(203, 228, 255);
 }
+.rules-btn {
+  background-color: red;
+  color: white;
+  width: 50px;
+  box-shadow: none;
+}
 
 .game-grid {
-  width: 50vw;
+  width: 30vw;
   height: 50vh;
+
   background-color: rgb(48, 41, 64);
   display: grid;
 
@@ -33,6 +55,20 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   box-shadow: 15px 15px 2px rgba(0, 0, 0, 0.2);
   max-width: 40vw;
+}
+.rules {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 400px;
+  background-color: white;
+  border-radius: 200px;
+}
+.toggle {
+  display: none;
 }
 .game-tile {
   width: 100%;
@@ -46,12 +82,13 @@ button {
   width: 400px;
   height: 50px;
   background-color: rgb(48, 41, 64);
-  margin: 35px;
+  margin: 10px;
   color: white;
   font-size: 40px;
   text-align: center;
 }
 .timer-box {
+  margin-top: 20px;
   width: 400px;
   height: 50px;
   background-color: rgb(48, 41, 64);
@@ -78,6 +115,14 @@ button {
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
+}
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+h2 {
+  text-decoration: underline;
 }
 
 /* change gameboard maxwidth for mobile */
