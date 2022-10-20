@@ -115,5 +115,5 @@ function gameWin() {
   startBtn.innerText = "START";
 
   timeLeft = 15;
-  winBox.innerText = "WINNER";
+  winBox.innerText = "WINNER!";
 }
