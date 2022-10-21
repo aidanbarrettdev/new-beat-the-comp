@@ -1,14 +1,13 @@
 canvas {
-  margin-bottom: 15px;
   width: 100%;
-  background: linear-gradient(
-    to bottom right,
-    rgb(42, 38, 69),
-    rgb(85, 86, 138)
-  );
   height: 100%;
   z-index: -1;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
 }
 
 body {
@@ -18,11 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(
-    to bottom right,
-    rgb(42, 38, 69),
-    rgb(85, 86, 138)
-  );
 }
 h1 {
   font-family: "Russo One", sans-serif;
