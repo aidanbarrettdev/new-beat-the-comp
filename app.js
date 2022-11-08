@@ -103,7 +103,7 @@ rulesBtn.addEventListener("click", (e) => {
 });
 
 startBtn.addEventListener("click", (e) => {
-  startBtn.innerText = "||";
+  startBtn.innerText = "STOP";
   if (gameplay === true) {
     gameOver();
   } else {
@@ -167,6 +167,10 @@ function gameLogic() {
   });
 }
 
+function refreshPage() {
+  window.location.reload();
+}
+
 function gameOver() {
   losegameAudio.play();
   clearInterval(countdown);
@@ -176,6 +180,7 @@ function gameOver() {
   timeLeft = 15;
   pointsBox.innerText = `Total: ${points}`;
   points = 0;
+  setTimeout(refreshPage, 3000);
 }
 
 function gameWin() {
