@@ -191,4 +191,5 @@ function gameWin() {
   startBtn.innerText = "START";
   timeLeft = 15;
   winBox.innerText = "WINNER!";
+  setTimeout(refreshPage, 3000);
 }
